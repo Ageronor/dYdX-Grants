@@ -8,3 +8,99 @@
 body
     background-color: $back
 
+.hero
+    padding-top: 120px
+
+.hero__inner
+    display: flex
+    flex-direction: column
+    align-items: center
+
+.title
+    padding-bottom: 80px
+.title-text
+    text-align: center
+    width: 820px
+    font-family: title
+    font-size: 80px
+    line-height: 88px
+    font-weight: 700
+    color: $text-main
+    letter-spacing: -2.2%
+    position: relative
+    &::after
+        position: absolute
+        content: url(/src/images/Line1.png)
+        width: 277px
+        height: 24px
+        left: 478px
+        top: 224px
+
+.title-btns
+    padding-top: 40px
+    display: flex
+    justify-content: space-around
+    width: 392px
+    height: 48px
+    gap: 32px
+
+.title-btn
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: center
+    padding: 12px 16px
+    gap: 4px
+    width: 180px
+    height: 48px
+    background: $frames
+    border-radius: 7.29px
+    color: $text-main
+    font-family: title
+    font-size: 16px
+    letter-spacing: -1.1%
+    line-height: 24px
+    cursor: pointer
+    &:last-child
+        display: flex
+        flex-direction: row
+        justify-content: center
+        align-items: center
+        padding: 12px 16px
+        gap: 12px
+        width: 180px
+        height: 48px
+        background: $brand
+
+.sub__title
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: center
+    padding-top: 80px
+    gap: 48px
+    width: 808px
+    height: 56px
+    &::after
+        content: url(/src/images/Down-arrow.png)
+        position: absolute
+        width: 32px
+        height: 100px
+        left: calc(50% - 32px/2 - 2px)
+        bottom: -50px
+
+.sub__title-item
+    position: relative
+    color: $text-main
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    width: 237.33px
+    height: 56px
+    font-size: 20px
+    line-height: 32px
+    font-family: generalFont
+    p
+        &:last-child
+            color: $text-second
