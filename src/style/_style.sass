@@ -72,7 +72,13 @@ body
         height: 48px
         background: $brand
 
+.title-btn svg
+    width: 16px
+    height: 16px
+    fill: #fff
+
 .sub__title
+    position: relative
     display: flex
     flex-direction: row
     justify-content: center
@@ -87,7 +93,7 @@ body
         width: 32px
         height: 100px
         left: calc(50% - 32px/2 - 2px)
-        bottom: -50px
+        bottom: -250px
 
 .sub__title-item
     position: relative
@@ -104,3 +110,120 @@ body
     p
         &:last-child
             color: $text-second
+
+.grants
+    padding-top: 208px
+
+.grants__inner
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding: 80px 108px
+    gap: 80px
+
+.grants__text
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding: 0px
+    gap: 24px
+    width: 600px
+    height: 160px
+
+.grants__title
+    color: $text-main
+    font-size: 40px
+    line-height: 48px
+    font-family: title
+    letter-spacing: -2.2%
+
+.grants__subtext
+    color: $text-second
+    font-size: 18px
+    line-height: 24px
+    font-family: title
+    letter-spacing: -1.8%
+    text-align: center
+    font-weight: medium
+
+.grants__link
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: center
+    padding: 0px
+    gap: 8px
+    height: 24px
+    color: $brand
+    text-decoration: none
+    svg
+        width: 16px
+        height: 16px
+        fill: $brand
+
+// Slider //
+
+.swiper-wrapper
+    max-width: 1440px
+.swiper-slide
+    max-width: 400px
+    height: 560px
+    border-radius: 16px
+    background: $frames
+    img
+        padding-left: 30px
+        padding-top: 50px
+    .swiper-slide-active
+        width: 0
+
+.content__inner
+    display: flex
+    flex-direction: column
+    width: 344px
+    height: 448px
+.content__top
+    padding-top: 50px
+    margin: 0
+.category,
+.amount
+    font-size: 16px
+    line-height: 24px
+    font-family: generalFont
+    color: $text-second
+
+.content__title
+    font-size: 24px
+    line-height: 32px
+    color: $text-main
+    letter-spacing: -1.9%
+    font-family: title
+
+.content__bot
+    color: $text-main
+    font-size: 16px
+    line-height: 24px
+    font-family: title
+    text-align: left
+    margin-top: 25px
+
+.swiper-button-next,
+.swiper-button-prev
+    &:after
+        z-index: 1
+        content: ''
+        position: absolute
+        width: 48px
+        height: 48px
+        left: -10px
+        top: -2px
+        background: #FFFFFF
+        box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04)
+        border-radius: 100px
+
+.svg-arrow
+    z-index: 1000
+    height: 24px
+    width: 24px
+
+.swiper-button-disabled
+    display: none

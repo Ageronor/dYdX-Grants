@@ -5,8 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
   </head>
   <body>
+    <!-- Header -->
     <header class="header">
       <div class="container">
         <div class="header__inner">
@@ -24,7 +29,7 @@
         </div>
       </div>
     </header>
-
+    <!-- Hero -->
     <div class="hero">
       <div class="container">
         <div class="hero__inner">
@@ -33,10 +38,15 @@
               Powering the future of dYdX through community grants
             </div>
             <div class="title-btns">
-              <div class="title-btn">Discover RFPs</div>
-              <div class="title-btn">Apply for grant
-                <img src="/src/images/arrow-right.png" alt="">
-              </div>
+              <button class="title-btn">Discover RFPs</button>
+              <button class="title-btn">
+                Apply for grant
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                  <path
+                    d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
+                  />
+                </svg>
+              </button>
             </div>
           </div>
           <div class="sub__title">
@@ -56,5 +66,142 @@
         </div>
       </div>
     </div>
+
+    <!-- Featured Grants -->
+    <div class="grants">
+      <div class="container">
+        <div class="grants__inner">
+          <div class="grants__text">
+            <div class="grants__title">Projects built with grants</div>
+            <div class="grants__subtext">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+              nulla risus, consectetur ut bibendum non, gravida non libero.
+            </div>
+            <a href="#" class="grants__link">
+              View all funded projects
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <path
+                  d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
+                />
+              </svg>
+            </a>
+          </div>
+          <!-- Slider -->
+          <div class="swiper">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="content">
+                    <div class="content__inner">
+                      <div class="content__top">
+                        <div class="category">Crowdfund</div>
+                        <div class="content__title">Funding rates page</div>
+                        <div class="amount">
+                          Funding amount: $5,000 - $6,000
+                        </div>
+                      </div>
+                      <p class="content__bot">
+                        Grant will be used to build a dedicated web app to give
+                        traders a view of all dYdX asset funding rates across
+                        multiple timeframes. The page will be interactive to
+                        include deep diving across different assets and
+                        historical analysis of changing rates. It will also
+                        include API functionalities to allow developer access.
+                      </p>
+                    </div>
+                    <img src="/src/images/Slider-img1.png" alt="" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="content">
+                    <div class="content__inner">
+                      <div class="content__top">
+                        <div class="category">Edition</div>
+                        <div class="content__title">
+                          Tradingview integration
+                        </div>
+                        <div class="amount">
+                          Funding amount: $5,000 - $6,000
+                        </div>
+                      </div>
+                      <p class="content__bot">
+                        The grant will be used to build a web application that
+                        integrates Tradingview strategies into a dYdX Trading
+                        account to execute trades directly through a strategy.
+                        Users will be able to tap into Tradingview resources and
+                        test out different ...
+                      </p>
+                    </div>
+                    <img src="/src/images/Slider-img2.png" alt="" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="content">
+                    <div class="content__inner">
+                      <div class="content__top">
+                        <div class="category">Entry</div>
+                        <div class="content__title">
+                          Rewards optimization research and paper
+                        </div>
+                        <div class="amount">
+                          Funding amount: $5,000 - $6,000
+                        </div>
+                      </div>
+                      <p class="content__bot">
+                        The Grant will be used to write a full research report
+                        and code samples that will determine optimal trading
+                        strategies for rewards maximization. The paper will be
+                        marketed across several platforms and shared among
+                        trading circles to help readership.
+                      </p>
+                    </div>
+                    <img src="/src/images/Slider-img3.png" alt="" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="content">
+                    <div class="content__inner">
+                      <div class="content__top">
+                        <div class="category">Crowdfund</div>
+                        <div class="content__title">
+                          DAO Organizational Structure Research
+                        </div>
+                        <div class="amount">
+                          Funding amount: $5,000 - $6,000
+                        </div>
+                      </div>
+                      <p class="content__bot">
+                        The grant will be used to fund a deep dive research
+                        report around historical and existing DAO structures
+                        with guidance around successful best practices. Topics
+                        will include organization structure, reporting &
+                        accountability, contributors, funding, and more.
+                      </p>
+                    </div>
+                    <img src="/src/images/Slider-img4.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+            <div class="swiper-button-prev">
+              <svg class="svg-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">  
+                <path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/>
+            </svg>
+            </div>
+            <div class="swiper-button-next">
+              <svg class="svg-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <path
+                  d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
+                />
+              </svg>
+            </div>
+            <!-- Slider end -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   </body>
 </html>
