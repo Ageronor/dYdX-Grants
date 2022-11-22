@@ -1,5 +1,6 @@
 @import src\style\_fonts.sass
 @import src\style\_header.sass
+@import src\style\_footer.sass
 
 *
     margin: auto
@@ -9,10 +10,6 @@ body
     background-color: $back
 
 h1,h2,h3,h4,h5,h6
-    padding: 0
-    margin: 0
-
-p
     padding: 0
     margin: 0
 
@@ -520,3 +517,51 @@ p
     color: $text-main
     font-size: 16px
     line-height: 24px
+
+.cta
+    padding-top: 210px
+    padding-bottom: 210px
+
+.cta__inner
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    padding: 40px 0px
+    gap: 40px
+    width: 1224px
+    height: 248px
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1)
+    border-radius: 16px
+    background: $gradient
+
+.cta__uptitle
+    text-align: center
+    font-size: 18px
+    line-height: 24px
+    font-family: title
+    color: $text-main
+    padding-bottom: 10px
+
+.cta__title
+    font-size: 40px
+    line-height: 48px
+    color: $text-main
+    font-family: title
+
+.cta__button
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: center
+    gap: 12px
+    width: 169px
+    height: 48px
+    border-radius: 7.29px
+    border-color: #fff
+    color: $brand
+    font-family: title
+    font-size: 16px
+    line-height: 24px
+    cursor: pointer
+    box-shadow: 0
