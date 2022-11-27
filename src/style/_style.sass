@@ -1,5 +1,6 @@
 @import src\style\_fonts.sass
 @import src\style\_header.sass
+@import src\style\_footer.sass
 
 *
     margin: auto
@@ -9,10 +10,6 @@ body
     background-color: $back
 
 h1,h2,h3,h4,h5,h6
-    padding: 0
-    margin: 0
-
-p
     padding: 0
     margin: 0
 
@@ -70,6 +67,7 @@ p
     letter-spacing: -1.1%
     line-height: 24px
     cursor: pointer
+    border: transparent
     &:last-child
         display: flex
         flex-direction: row
@@ -80,6 +78,7 @@ p
         width: 180px
         height: 48px
         background: $brand
+        border: transparent
 
 .title-btn svg
     width: 16px
@@ -192,10 +191,12 @@ p
     width: 344px
     height: 448px
     gap: 16px
-.content__top
+
+.slider__header
     padding-top: 50px
     padding-left: 0px
     margin: 0
+
 .category,
 .amount
     font-size: 16px
@@ -203,14 +204,14 @@ p
     font-family: generalFont
     color: $text-second
 
-.content__title
+.slider__title
     font-size: 24px
     line-height: 32px
     color: $text-main
     letter-spacing: -1.9%
     font-family: title
 
-.content__bot
+.slider__description
     color: $text-main
     font-size: 16px
     line-height: 24px
@@ -296,7 +297,7 @@ p
 .blog__content
     padding: 24px
 
-.blog__title,
+.blog__uptitle,
 .blog__date
     font-family: generalFont
     color: $text-second
@@ -304,7 +305,7 @@ p
     line-height: 24px
     padding-bottom: 8px
 
-.blog__text
+.blog__title
     font-family: title
     color: $text-main
     font-size: 24px
@@ -319,6 +320,7 @@ p
     padding: 80px 0px
 
 .FAQ__header
+    padding: 0
     width: 600px
     height: 120px
     padding-bottom: 250px
@@ -419,7 +421,8 @@ p
     flex-direction: column
     align-items: center
 
-.app__top
+.app__header
+    padding: 0
     width: 600px
     height: 112px
     margin-bottom: 40px
@@ -442,7 +445,7 @@ p
         top: 43px
         right: 105px
 
-.app__text
+.app__description
     font-family: title
     color: $text-second
     font-size: 18px
@@ -456,6 +459,7 @@ p
     align-items: flex-start
     gap: 54px
     position: relative
+    counter-reset: my-custom-counter
 
 .app__item
     display: flex
@@ -468,6 +472,13 @@ p
     border-radius: 16px
     background: $frames
     position: relative
+    &::before
+        counter-increment: my-custom-counter
+        content: counter(my-custom-counter)
+        font-family: number
+        font-size: 64px
+        line-height: 80px
+
     &:nth-child(1)
         transform: rotate(-1deg)
     &:nth-child(2)
@@ -500,23 +511,65 @@ p
     font-size: 64px
     line-height: 80px
 
-.app__item-bot
-    display: flex
-    flex-direction: column
-    justify-content: center
-    align-items: flex-start
-    margin: 0
-    gap: 16px
-
-.item__bot-title
+.item__title
     font-family: title
     color: $text-main
     font-size: 24px
     line-height: 32px
     padding-bottom: 10px
 
-.item__bot-text
+.item__description
     font-family: title
     color: $text-main
     font-size: 16px
     line-height: 24px
+    margin: 0
+
+.cta
+    padding-top: 210px
+    padding-bottom: 210px
+
+.cta__inner
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    padding: 40px 0px
+    gap: 40px
+    width: 1224px
+    height: 248px
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1)
+    border-radius: 16px
+    background: $gradient
+
+.cta__uptitle
+    text-align: center
+    font-size: 18px
+    line-height: 24px
+    font-family: title
+    color: $text-main
+    padding-bottom: 10px
+
+.cta__title
+    font-size: 40px
+    line-height: 48px
+    color: $text-main
+    font-family: title
+
+.cta__button
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: center
+    width: 169px
+    height: 48px
+    border-radius: 7.29px
+    border-color: #fff
+    color: $brand
+    font-family: title
+    font-size: 16px
+    line-height: 24px
+    cursor: pointer
+    box-shadow: 0
+    border: transparent
+    padding: 5px
