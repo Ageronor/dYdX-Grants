@@ -1,14 +1,15 @@
 import "./index.html";
+import "./form.html";
 import "./index.sass";
 
 var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 3,
-    spaceBetween: 30,
+  slidesPerView: 3,
+  spaceBetween: 30,
 
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
 });
 
 let answers = document.querySelectorAll(".faq__layout");
@@ -22,3 +23,9 @@ answers.forEach((event) => {
     }
   });
 });
+
+// Application form //
+
+document.querySelector("#submit").onclick = function () {
+  alert("Вы нажали на кнопку");
+};

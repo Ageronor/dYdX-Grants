@@ -19,12 +19,16 @@
             <img src="/src/images/Logo.png" alt="" />
           </div>
           <nav class="menu">
-            <a class="menu-link" href="">Discover initiatives</a>
+            <a class="menu-link" href="https://www.twitch.tv/dreadztv"
+              >Discover initiatives</a
+            >
             <a class="menu-link" href="">Funded grants</a>
             <a class="menu-link" href="">Program expenses</a>
             <a class="menu-link" href="">Blog</a>
             <a class="menu-link" href="">FAQ</a>
-            <button class="btn">Apply for grant</button>
+            <form action="./form.html" target="_blank">
+              <button type="submit" class="btn">Apply for grant</button>
+            </form>
           </nav>
         </div>
       </div>
@@ -38,7 +42,7 @@
               Powering the future of dYdX through community grants
             </h1>
             <div class="title-btns">
-              <button class="title-btn">Discover RFPs</button>
+              <button id="submit" class="title-btn">Discover RFPs</button>
               <button class="title-btn">
                 Apply for grant
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
@@ -117,9 +121,7 @@
                     <div class="content__inner">
                       <header class="slider__header">
                         <div class="category">Edition</div>
-                        <h2 class="slider__title">
-                          Tradingview integration
-                        </h2>
+                        <h2 class="slider__title">Tradingview integration</h2>
                         <div class="amount">
                           Funding amount: $5,000 - $6,000
                         </div>
@@ -416,23 +418,22 @@
             </li>
 
             <li class="app__item">
-                <h3 class="item__title">Interview</h3>
-                <p class="item__description">
-                  If your application is selected, the dYdX Grants will conduct
-                  1-2 interviews to collect more information on the Applicant's
-                  background and the proposal.
-                </p>
+              <h3 class="item__title">Interview</h3>
+              <p class="item__description">
+                If your application is selected, the dYdX Grants will conduct
+                1-2 interviews to collect more information on the Applicant's
+                background and the proposal.
+              </p>
             </li>
 
             <li class="app__item">
-                <h3 class="item__title">Grant offer</h3>
-                <p class="item__description">
-                  The dYdX Grants team will determine if the proposal fits into
-                  the grant program. A vesting schedule and timeline for product
-                  development reports will also be determined in the offer;
-                </p>
+              <h3 class="item__title">Grant offer</h3>
+              <p class="item__description">
+                The dYdX Grants team will determine if the proposal fits into
+                the grant program. A vesting schedule and timeline for product
+                development reports will also be determined in the offer;
+              </p>
             </li>
-
           </ol>
         </div>
       </div>
